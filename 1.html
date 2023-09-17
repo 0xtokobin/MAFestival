@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <img src="./1.png" alt="">
+            <div class="left-footer">
+                <span>答对0题</span>
+                <span>累计奖励</span>
+            </div>
+        </div>
+        <div class="middle-container">
+            <header>
+                <div>第1/10题:</div>
+                <div>中秋节从哪个朝代开始成为固定的节日？</div>
+            </header>
+            <main>
+                <div>选项</div>
+                <div>选项</div>
+                <div>选项</div>
+                <div>选项</div>
+            </main>
+            <footer>
+                <div>回答正确！</div>
+                <div class="next-btn">
+                    下一题
+                </div>
+                <div class="correctanswer">
+                    恭喜你答对了多少题
+                </div>
+            </footer>
+            <div class="again">
+                再来一次
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        height: 100vh;
+        width: 100vh;
+        background-color: #20304B;
+    }
+
+    .container {
+        height: 70vh;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .left-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: whitesmoke;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    .left-footer span:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    header {
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .middle-container {
+        width: 330px;
+        height: 130px;
+        margin-left: 30px;
+        position: relative;
+        top: -80px
+    }
+
+    header div:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
+    main {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        top: 30px;
+    }
+
+    main div {
+        position: absolute;
+        margin: 10px 0;
+        padding: 8px 12px;
+        background-color: transparent;
+        /* 深蓝色背景 */
+        border: 2px solid black;
+        /* 浅色边框 */
+        color: whitesmoke;
+        /* 文本颜色 */
+        border-radius: 8px;
+        text-align: center;
+        /* 文本居中 */
+        cursor: pointer;
+        /* 当鼠标悬停时，显示指针 */
+        transition: background-color 0.3s;
+        /* 平滑的背景颜色过渡 */
+        width: 120px;
+        height: 18px;
+    }
+
+    main div:hover {
+        background-color: #3A4D8B;
+        /* 当鼠标悬停时的背景颜色 */
+    }
+
+    /* 左上 */
+    main div:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    /* 左下 */
+    main div:nth-child(2) {
+        bottom: 0;
+        left: 0;
+    }
+
+    /* 右上 */
+    main div:nth-child(3) {
+        top: 0;
+        right: 0;
+    }
+
+    /* 右下 */
+    main div:nth-child(4) {
+        bottom: 0;
+        right: 0;
+    }
+
+    footer {
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+
+    footer div {
+        color: whitesmoke;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    footer div:nth-child(2) {
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid whitesmoke;
+        width: 60px;
+        height: 20px;
+    }
+
+    footer div:nth-child(1) {
+        display: none;
+    }
+
+    .next-btn {
+        display: none;
+        margin-top: 5px;
+        margin-left: 20px;
+        border-radius: 6px;
+    }
+
+    header div:nth-child(2) {
+        position: relative;
+        top: 15px;
+    }
+
+    .correctanswer {
+        display: none;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .again {
+        display: none;
+        border: 2px solid rgb(11, 24, 15);
+        color: whitesmoke;
+        width: 100px;
+        text-align: center;
+        border-radius: 6px;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+        left: 50px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .again:hover {
+        background-color: rgb(125, 131, 151);
+    }
+</style>
+<script src="./1.js">
+</script>
+
+</html>
